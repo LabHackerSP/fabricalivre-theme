@@ -708,7 +708,7 @@ a:hover, a:active {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated:not(.published) {
@@ -896,6 +896,16 @@ body {
 
 
 /* Home */
+
+.home #primary {
+	width:100% !important;
+	padding:0px !important;
+}
+
+.home #secondary {
+	width:auto;
+}
+
 .home .home-banner {
 	height:600px;
 }
@@ -926,6 +936,27 @@ body {
 	height:467px;
 }
 
+
+
+/* Content */
+
+.page #primary {
+	width:70%;
+	float:left;
+	padding-left:4em;
+	padding-right:2em;
+}
+
+.page #secondary {
+	float:right;
+	max-width:30%;
+	padding-top:2em;
+}
+.
+
+
+/* Mobiliario */
+
 .mobilario {
 	width:100%;
 }
@@ -938,24 +969,24 @@ body {
 
 .mobiliario ._esq {
     float:left;
-    width:477px;
-    height:477px;
+    width:377px;
+    height:377px;
     border:1px solid #ccc;
 }
 
 .mobiliario ._esq ._foto {
-	width:400px;
-	height:400px;
+	width:300px;
+	height:300px;
 	margin:35px auto;
 }
 .mobiliario ._esq ._foto img {
-	width:400px;
-	height:400px;
+	width:300px;
+	height:300px;
 }
 
 .mobiliario ._dir {
     float:left;
-    width:290px;
+    width:300px;
 }
 
 .mobiliario ._dir ul {
@@ -973,4 +1004,94 @@ body {
 
 .mobiliario .botoes button {
 	margin:20px;
+}
+
+
+/* Hover image na galeria */
+.item {
+	float:left;
+	width:200px;
+	height:200px;
+	border:5px solid #BDA370;
+	margin:5px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height:100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover {
+	background-color: #7F6849;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+/* Menu lateral de filtros */
+.menu-superior {
+	width:100%;
+	clear:both;
+	background-color: #ccc;
+	height:100px;
+	display:none; /* temp */
+}
+
+.menu-lateral {
+	float:left;
+	min-width:200px;
+	width:20%;
+	background-color: #ccc;
+}
+
+.menu-lateral .searchandfilter {
+	margin-left:-80px;
+}
+
+.menu-lateral .searchandfilter li {
+	display: block;
+}
+
+.conteudo {
+	padding-left:40px;
+	float:right;
+	width:80%;
+}
+
+
+/* Footer */
+
+.site-footer .site-info {
+	text-align: center;
 }

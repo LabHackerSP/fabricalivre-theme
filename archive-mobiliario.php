@@ -24,9 +24,7 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					single_cat_title( '<h1 class="page-title">', '</h1>' );
-				?>
+				<h1 class="page-title">Mobiliarios</h1>
 			</header><!-- .page-header -->
 
 			<?php
